@@ -1,0 +1,40 @@
+@import url(//fonts.googleapis.com/earlyaccess/opensanshebrew.css);
+
+.Navbar {
+    position: fixed;
+    justify-content: space-between;
+    display: flex;
+    width: 100vw;
+}
+.Navbar__left {
+    display: flex;
+    margin: 50px;
+}
+.MuiSwitch-track {
+    background-color: white !important;
+    border: 3px solid #adb5bd !important;
+    opacity: 1 !important;
+    border-radius: 10px !important;
+}
+.MuiButtonBase-root {
+    color: #343a40 !important;
+    top: 2px !important;
+}
+.Navbar__left > .MuiTypography-root {
+    color: #343a40 !important;
+    outline: none !important;
+}
+
+.Navbar__right {
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+}
+.Navbar__rightLink {
+    font-family: 'Open Sans Hebrew', sans-serif;
+    font-weight: 100 !important;
+}
+.is-current {
+    color: red !important;
+}
+

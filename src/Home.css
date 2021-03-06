@@ -1,0 +1,70 @@
+.Home {
+    display: flex;
+    height: 100vh;
+    background-image: linear-gradient(#F8F9FA,#E9ECEF);
+    justify-content: space-evenly;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+.Home__text {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 50%;
+    margin-top: 250px;
+    color: #212529;
+    /* background-color: rgba(0,0,0,0.4); */
+}
+@media screen and (max-width: 48rem) {
+    .Home__text {
+        width: 70%;
+        margin-left: -15px;
+        line-height: 2;
+    }
+    .Home__textHeading {
+        font-size: 48px;
+    }
+    .Home__textParagraph {
+        font-size: 36px;
+    }
+}
+@media screen and (max-width: 67.5rem) {
+    .Home__text {
+        width: 70%;
+     
+    }
+}
+@media screen and (min-width: 48rem) {
+    .Home__textHeading {
+        font-size: 72px;
+    }
+    .Home__textParagraph {
+        font-size: 64px;
+    }
+}
+.Home__textHeading {
+    font-family: 'Open Sans Hebrew', sans-serif;
+    font-weight: 100;
+}
+.Home__textParagraph {
+    font-family: 'Open Sans Hebrew', sans-serif;
+    font-weight: 100;
+}
+.hand {
+        animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+        animation-duration: 2.5s;        /* Change to speed up or slow down */
+        animation-iteration-count: infinite;  /* Never stop waving :) */
+        transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+        display: inline-block;
+      
+}
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+  100% { transform: rotate( 0.0deg) }
+}
