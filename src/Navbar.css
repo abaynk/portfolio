@@ -5,6 +5,7 @@
     justify-content: space-between;
     display: flex;
     width: 100vw;
+    z-index: 1;
 }
 .Navbar__left {
     display: flex;

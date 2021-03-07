@@ -1,0 +1,74 @@
+.MuiStepLabel-active {
+    font-size: 36px !important;
+    font-family: 'Open Sans Hebrew', sans-serif !important;
+    font-weight: 100 !important;
+}
+.MuiStepIcon-active {
+    color: #343a40 !important; 
+}
+.MuiStepIcon-completed {
+    color: #495057 !important; 
+}
+.MuiStepIcon-text {
+    /* fill: none !important;  */
+}
+.Step__contentSection > h2 {
+    font-size: 24px;
+    font-family: 'Open Sans Hebrew', sans-serif;
+    font-weight: 100;
+}
+.Step__contentSection {
+    /* background-color: gray; */
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+.Step__contentSection > p {
+    font-size: 18px;
+    font-family: 'Open Sans Hebrew', sans-serif;
+    font-style: italic;
+    font-weight: 100;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+.Step__contentSection__date {
+    font-size: 18px;
+    font-family: 'Open Sans Hebrew', sans-serif;
+    font-style: italic;
+    font-weight: 100;  
+    float: right;
+    margin-right: 100px;
+    margin-left: 15px;
+}
+
+.Table {
+    display: table;
+    width: 100%
+}
+.Table > div {
+    width:30%;
+    display: table-cell;
+}
+.Table > div > a {
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Open Sans Hebrew', sans-serif;
+    font-style: italic;
+    font-weight: 100;
+    margin-top: 20px;
+    padding-left: 15px;
+    color: #212529;
+    outline: none;
+}
+.Table > div > a > p {
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+}
+img {
+    margin-left: 10px;
+    /* filter: invert(0%) sepia(0%) saturate(7500%) hue-rotate(327deg) brightness(0%) contrast(104%); */
+}
+#express {
+    background-color: yellow;
+}

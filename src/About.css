@@ -1,12 +1,6 @@
 .About {
-    height: 200vh;
+    height:fit-content;
     background-image: linear-gradient(#E9ECEF,#DEE2E6);
     padding-top: 100px;
-}
-.About__line {
-    padding-top: 100px;
-    margin-left: 30vw;
-    height: 80%;
-    width: 0;
-    border-left: 2px solid black;
+    /* margin-left: 30%; */
 }
