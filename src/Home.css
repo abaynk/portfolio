@@ -3,56 +3,46 @@
     height: 100vh;
     background-image: linear-gradient(#F8F9FA,#E9ECEF);
     justify-content: space-evenly;
-    overflow: scroll;
-    scrollbar-width: none;
 }
 .Home__text {
+    height:fit-content;
     display: flex;
     flex-direction: column;
     text-align: left;
     width: 60%;
-    margin-top: 250px;
+    margin-top: 25vh;
     color: #212529;
-    /* background-color: rgba(0,0,0,0.4); */
+    overflow: scroll;
+    scrollbar-width: none;
 }
-@media screen and (max-width: 48rem) {
-    .Home__text {
-        width: 70%;
-        margin-left: -15px;
-        line-height: 2;
-    }
+
+.Home__textHeading {
+    font-family: 'Open Sans Hebrew', sans-serif;
+    font-weight: 100;
+    font-size: 72px;
+}
+.Home__textParagraph {
+    font-family: 'Open Sans Hebrew', sans-serif;
+    font-weight: 100;
+    font-size: 64px;
+    line-height: 120px;
+}
+@media (max-width: 48rem) {
     .Home__textHeading {
         font-size: 48px;
     }
     .Home__textParagraph {
         font-size: 36px;
+        line-height: 60px !important;
     }
 }
-@media screen and (max-width: 67.5rem) {
+@media (max-width: 67.5rem) {
     .Home__text {
-        width: 70%;
-    }
-}
-@media screen and (min-width: 48rem) {
-    .Home__textHeading {
-        font-size: 72px;
+        width: 80%;
     }
     .Home__textParagraph {
-        font-size: 64px;
+        line-height: 80px;
     }
-}
-@media screen and (min-width: 1450px) {
-    .Home__text {
-        margin-top: 300px;
-    }
-}
-.Home__textHeading {
-    font-family: 'Open Sans Hebrew', sans-serif;
-    font-weight: 100;
-}
-.Home__textParagraph {
-    font-family: 'Open Sans Hebrew', sans-serif;
-    font-weight: 100;
 }
 .hand {
         animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */

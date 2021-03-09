@@ -1,6 +1,11 @@
 .About {
     height:fit-content;
     background-image: linear-gradient(#E9ECEF,#DEE2E6);
-    padding-top: 100px;
-    /* margin-left: 30%; */
+    padding-top: 20vh;
+    padding-left: 30%;
+}
+@media (max-width: 48rem) {
+    .About {
+        padding-left: 0;
+    }
 }

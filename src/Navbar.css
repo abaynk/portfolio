@@ -7,6 +7,24 @@
     width: 100vw;
     z-index: 1;
 }
+@media (max-width: 42rem) {
+    .Navbar {
+        flex-direction: column;
+        padding-bottom: 15px;
+        position: fixed;
+        z-index: 1;
+        overflow: hidden;
+        background-color: rgba( 206, 212, 218, 0.5 );
+    }
+    /* .Navbar__right > ul {
+        display:flex;
+        text-align: left;
+        flex-direction: column;
+    } */
+    .Navbar__left {
+        margin: 10px !important;
+    }
+}
 .Navbar__left {
     display: flex;
     margin: 50px;
@@ -28,12 +46,16 @@
 
 .Navbar__right {
     display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
     margin-right: 50px;
 }
 .Navbar__rightLink {
     font-family: 'Open Sans Hebrew', sans-serif;
     font-weight: 100 !important;
+    color: #212529 !important; 
+    padding: 5px;
 }
 .is-current {
     color: red !important;

@@ -2,6 +2,7 @@
     font-size: 36px !important;
     font-family: 'Open Sans Hebrew', sans-serif !important;
     font-weight: 100 !important;
+    color: #212529 !important;
 }
 .MuiStepIcon-active {
     color: #343a40 !important; 
@@ -9,19 +10,17 @@
 .MuiStepIcon-completed {
     color: #495057 !important; 
 }
-.MuiStepIcon-text {
-    /* fill: none !important;  */
-}
-.Step__contentSection > h2 {
-    font-size: 24px;
-    font-family: 'Open Sans Hebrew', sans-serif;
-    font-weight: 100;
-}
+
 .Step__contentSection {
     /* background-color: gray; */
     display: flex;
     flex-direction: column;
     margin-bottom: 40px;
+}
+.Step__contentSection > h2 {
+    font-size: 24px;
+    font-family: 'Open Sans Hebrew', sans-serif;
+    font-weight: 100;
 }
 .Step__contentSection > p {
     font-size: 18px;
@@ -40,10 +39,68 @@
     margin-right: 100px;
     margin-left: 15px;
 }
+@media (max-width: 48rem) {
+    .MuiStepLabel-active {
+        font-size: 28px !important;
+    }
+    .Step__contentSection {
+        width: 80vw;
+        margin-bottom: 10px;
+    }
+    .Step__contentSection > h2 {
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .Step__contentSection > p {
+        font-size: 16px !important;
+        font-style: normal;
+    }
+    .Step__contentSection__date {
+        font-size: 16px !important;
+        font-family: 'Open Sans Hebrew', sans-serif;
+        font-style: italic;
+        font-weight: 100;  
+        width:max-content;
+        float: left !important;
+    }
 
+    .Table {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+    .Table > div {
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: space-between;
+        /* background-color: red; */
+        width: 90% !important;
+        /* align-items:center; */
+    }
+    .Table > div > a {
+        font-size: 18px !important;
+    }
+    .Table > div > a > p > img {
+        height: 20px !important;
+    }
+    .Hobbies {
+        width: 80vw !important;
+    }
+    .lang {
+        display: flex;
+        flex-direction: column;
+    }
+    .lang > sub {
+        font-size: 12px !important;
+        /* display: none; */
+    }
+    .lang > span {
+        display: none !important;
+    }
+}
 .Table {
     display: table;
-    width: 100%
+    width: 100%;
+    margin-bottom: 50px;
 }
 .Table > div {
     width:30%;
@@ -60,15 +117,43 @@
     color: #212529;
     outline: none;
 }
+.Table > div > a> p:hover {
+    /* transform: translate(5px); */
+    scale: 1.05;
+}
 .Table > div > a > p {
+    width:fit-content;
     display: flex;
     align-items: center;
     padding-left: 15px;
 }
-img {
-    margin-left: 10px;
-    /* filter: invert(0%) sepia(0%) saturate(7500%) hue-rotate(327deg) brightness(0%) contrast(104%); */
+.Table > div > p {
+    width:fit-content;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Open Sans Hebrew', sans-serif;
+    font-style: italic;
+    font-weight: 100;
+    margin-top: 20px;
+    padding-left: 15px;
+    color: #212529;
+    outline: none;
 }
-#express {
-    background-color: yellow;
+a {
+    outline: none;
+    text-decoration: none;
+}
+.lang {
+    font-style: normal !important;
+}
+.lang > sub {
+    font-size: 16px;
+    margin-top: 2px;
+    margin-left: 5px;
+    font-style: italic;
+}
+.Hobbies {
+    margin-bottom: 50px !important;
 }
